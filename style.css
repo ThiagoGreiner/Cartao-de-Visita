@@ -1,159 +1,178 @@
 * {
-    margin: 0; /* Retirando todas margens da pagina */
-    padding: 0; /* Retirando todos espaçamentos internos da pagina */
-    box-sizing: border-box; /* Adicionando as medidas apartir das bordas */
+  margin: 0; /* Retirando todas margens da pagina */
+  padding: 0; /* Retirando todos espaçamentos internos da pagina */
+  box-sizing: border-box; /* Adicionando as medidas apartir das bordas */
 }
 
-:root { /* Modo raiz */
-    --text-color: white; /* Criação de var */
-    --bg-url: url(./assets/bg-mobile.jpg); /* Imagem de fundo */
-    --stroke-color: rgba(255, 255, 255, 0.5); /* Criação de var */
-    --surface-color: rgba(255, 255, 255, 0.05); /* Cor de fundo, o ultimo dado informa o grau de transparência */
-    --surface-color-hover: rgba(0, 0, 0, 0.02); /* hover botãos */
-    --highlight-color: rgba(255, 255, 255, 0.2); /* hover social links */
-    --switch-bg-url: url(./assets/moon-stars.svg);
+:root {
+  /* Modo raiz */
+  --text-color: white; /* Criação de var */
+  --bg-url: url(./assets/bg-mobile.jpg); /* Imagem de fundo */
+  --stroke-color: rgba(255, 255, 255, 0.5); /* Criação de var */
+  --surface-color: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Cor de fundo, o ultimo dado informa o grau de transparência */
+  --surface-color-hover: rgba(0, 0, 0, 0.02); /* hover botãos */
+  --highlight-color: rgba(255, 255, 255, 0.2); /* hover social links */
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-.light { /* Modo light */
-    --text-color: black; /* Criação de var */
-    --bg-url: url(./assets/bg-mobile-light.jpg); /* Imagem de fundo */
-    --stroke-color: rgba(0, 0, 0, 0.5); /* Criação de var */
-    --surface-color: rgba(0, 0, 0, 0.05); /* Cor de fundo, o ultimo dado informa o grau de transparência */
-    --surface-color-hover: rgba(0, 0, 0, 0.02); /* hover botãos */
-    --highlight-color: rgba(0, 0, 0, 0.1); /* hover social links */
-    --switch-bg-url: url(./assets/sun.svg);
+.light {
+  /* Modo light */
+  --text-color: black; /* Criação de var */
+  --bg-url: url(./assets/bg-mobile-light.jpg); /* Imagem de fundo */
+  --stroke-color: rgba(0, 0, 0, 0.5); /* Criação de var */
+  --surface-color: rgba(
+    0,
+    0,
+    0,
+    0.05
+  ); /* Cor de fundo, o ultimo dado informa o grau de transparência */
+  --surface-color-hover: rgba(0, 0, 0, 0.02); /* hover botãos */
+  --highlight-color: rgba(0, 0, 0, 0.1); /* hover social links */
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
-    background-image: var(--bg-url); /* Puxando imagem */
-    background-repeat: no-repeat; /* Não repetir a imagem */
-    background-position: top center; /* Centralizar no eixo X e manter no topo do eixo Y */
-    background-size: cover; /* Ajustar a imagem conforme o tamanho da tela */
+  background-image: var(--bg-url); /* Puxando imagem */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+  background-position: top center; /* Centralizar no eixo X e manter no topo do eixo Y */
+  background-size: cover; /* Ajustar a imagem conforme o tamanho da tela */
 }
 
-body * { /* Definindo a fonte e cor a serem usados na pagina */
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color); /* Puxando a cor da variavel */
+body * {
+  /* Definindo a fonte e cor a serem usados na pagina */
+  font-family: "Inter", sans-serif;
+  color: var(--text-color); /* Puxando a cor da variavel */
 }
 
 #container {
-    width: 360px; /* Largura */
-    margin: 56px auto 0px; /* Margens superior de 56px, laterais automaticas, inferior 0 */
-    padding: 0 24px;
+  width: 100%; /* Largura */
+  max-width: 588px; /* Largura maxima */
+  margin: 56px auto 0px; /* Margens superior de 56px, laterais automaticas, inferior 0 */
+  padding: 0 24px;
 }
 
 /* Profile */
 #profile {
-    text-align: center; /* Retirando o padrão left e alinhando tudo ao centro */
-    padding: 24px; /* Espaçamento interno */
+  text-align: center; /* Retirando o padrão left e alinhando tudo ao centro */
+  padding: 24px; /* Espaçamento interno */
 }
 
 #profile img {
-    width: 112px; /* Largura */
+  width: 112px; /* Largura */
 }
 
 #profile p {
-    font-weight: 500; /* Tamnho da fonte */
-    line-height: 24px; /* Altura da linha */
-    margin-top: 8px; /* Margem */
+  font-weight: 500; /* Tamnho da fonte */
+  line-height: 24px; /* Altura da linha */
+  margin-top: 8px; /* Margem */
 }
 
 /* Switch*/
 #switch {
-    position: relative; 
-    width: 64px; /* Largura */
+  position: relative;
+  width: 64px; /* Largura */
 
-    margin: 4px auto; /* Margem */
+  margin: 4px auto; /* Margem */
 }
 
-#switch button { 
-    width: 32px; /* Largura */
-    height: 32px; /* Altura */
-    background: white var(--switch-bg-url) no-repeat center; /* Fundo */
-    border: 0; /* Borda */
-    border-radius: 50%; /* Arredondamento da borda */
+#switch button {
+  width: 32px; /* Largura */
+  height: 32px; /* Altura */
+  background: white var(--switch-bg-url) no-repeat center; /* Fundo */
+  border: 0; /* Borda */
+  border-radius: 50%; /* Arredondamento da borda */
 
-    position: absolute; /*Permite que as tags ocupem o mesmo lugar */
-    top: 50%; /* Relativo ao pai */
-    left: 0; /* Posicionamento a esquerda */
-    transform: translateY(-50%); /*  Menos 50% para cima do que ele esta */
-    z-index: 1; /* Faz com que este elemento fica a frente do outro que esta no mesmo lugar que ele */
+  position: absolute; /*Permite que as tags ocupem o mesmo lugar */
+  top: 50%; /* Relativo ao pai */
+  left: 0; /* Posicionamento a esquerda */
+  transform: translateY(-50%); /*  Menos 50% para cima do que ele esta */
+  z-index: 1; /* Faz com que este elemento fica a frente do outro que esta no mesmo lugar que ele */
 }
 
-.light #switch button{
-    right: 0; /* Posicionamento a direita */
-    left: initial; /* Reseta */
+.light #switch button {
+  right: 0; /* Posicionamento a direita */
+  left: initial; /* Reseta */
 }
 
 #switch span {
-    display: block;
-    width: 64px;
-    height: 24px;
-    background: var(--surface-color);
-    border: 1px solid var(--stroke-color);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 9999px;
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
 
 /*links*/
 ul {
-    list-style: none; /* Retirando os pontinhos da lista */
-    display: flex; /* Permite a mobilidade da tag */
-    flex-direction: column; /* Ordena uma em baixo da outra */
-    gap: 16px; /* Anre um espaço entre as tags */
+  list-style: none; /* Retirando os pontinhos da lista */
+  display: flex; /* Permite a mobilidade da tag */
+  flex-direction: column; /* Ordena uma em baixo da outra */
+  gap: 16px; /* Anre um espaço entre as tags */
 
-    padding: 24px 0; /*Espassamento interno */
+  padding: 24px 0; /*Espassamento interno */
 }
 
 ul li a {
-    display: flex; /* Permite que a tag a ocupe toda linha */
-    justify-content: center; /* Centraliza as tags no eixo Y */
-    justify-content: center; /* Centraliza as tags no eixo X */
+  display: flex; /* Permite que a tag a ocupe toda linha */
+  justify-content: center; /* Centraliza as tags no eixo Y */
+  justify-content: center; /* Centraliza as tags no eixo X */
 
-    padding: 16px 24px; /* Expassamento interno */
+  padding: 16px 24px; /* Expassamento interno */
 
-    background-color: var(--surface-color); /* Cor de fundo */
-    border: 1px solid var(--stroke-color); /* Bordas */
-    border-radius: 8px; /* Arredondamento das bordas */
+  background-color: var(--surface-color); /* Cor de fundo */
+  border: 1px solid var(--stroke-color); /* Bordas */
+  border-radius: 8px; /* Arredondamento das bordas */
 
-    backdrop-filter: blur(4px); /* Adiciona um efeito embassado no elemento */
-    -webkit-backdrop-filter: blur(4px); /* A mesma funcionalidade do efeito acima, porem o -webkit- permite que este efeito tambem funcione no browser safari9 */
+  backdrop-filter: blur(4px); /* Adiciona um efeito embassado no elemento */
+  -webkit-backdrop-filter: blur(
+    4px
+  ); /* A mesma funcionalidade do efeito acima, porem o -webkit- permite que este efeito tambem funcione no browser safari9 */
 
-    text-decoration: none; /* Retira a linha de baixo do texto */
-    font-weight: 500; /* Tamanho da fonte */
+  text-decoration: none; /* Retira a linha de baixo do texto */
+  font-weight: 500; /* Tamanho da fonte */
 
-    transition: background 0.2s; /* Usamos para informar qual tag fara a transição para o hover abaixo e quanto tempo levara a transição */
+  transition: background 0.2s; /* Usamos para informar qual tag fara a transição para o hover abaixo e quanto tempo levara a transição */
 }
 
-ul li a:hover { /* Ira alterar o designer das tag quanto o mouse passar em cima */
-    background: var(--surface-color-hover);
-    border: 1.5px solid var(--text-color);
+ul li a:hover {
+  /* Ira alterar o designer das tag quanto o mouse passar em cima */
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
 
 #social-links {
-    display: flex; /* Permite a mobilidade da tag */
-    justify-content: center; /*Centraliza os icones */
-    padding: 24px 0; /* Coloca espassamento superior */
-    font-size: 24px; /* Aumenta o tamanho do icone */
+  display: flex; /* Permite a mobilidade da tag */
+  justify-content: center; /*Centraliza os icones */
+  padding: 24px 0; /* Coloca espassamento superior */
+  font-size: 24px; /* Aumenta o tamanho do icone */
 }
 
-#social-links a { /* Alinhamentos das tags a nos eixos */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
+#social-links a {
+  /* Alinhamentos das tags a nos eixos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
 
-    transition: background 0.2s; /* Tempo de transição para o hover */
-    border-radius: 50%; /* Borda arredonda para o hover */
+  transition: background 0.2s; /* Tempo de transição para o hover */
+  border-radius: 50%; /* Borda arredonda para o hover */
 }
 
-#social-links a:hover { /* Ira alterar o designer dos icones quanto o mouse passar em cima */
-    background: var(--highlight-color);
+#social-links a:hover {
+  /* Ira alterar o designer dos icones quanto o mouse passar em cima */
+  background: var(--highlight-color);
 }
 
 footer {
-    padding: 24px 0;
-    text-align: center;
-    font-size: 14px;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
 }
