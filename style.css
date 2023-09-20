@@ -41,6 +41,7 @@ body {
   background-repeat: no-repeat; /* Não repetir a imagem */
   background-position: top center; /* Centralizar no eixo X e manter no topo do eixo Y */
   background-size: cover; /* Ajustar a imagem conforme o tamanho da tela */
+  height: 100vh; 
 }
 
 body * {
@@ -175,4 +176,15 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assts/bg-desktop-light.jpg);
+  }
 }
