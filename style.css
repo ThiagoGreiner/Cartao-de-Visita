@@ -41,7 +41,7 @@ body {
   background-repeat: no-repeat; /* Não repetir a imagem */
   background-position: top center; /* Centralizar no eixo X e manter no topo do eixo Y */
   background-size: cover; /* Ajustar a imagem conforme o tamanho da tela */
-  height: 100vh; 
+  height: 100vh;
 }
 
 body * {
@@ -90,14 +90,19 @@ body * {
 
   position: absolute; /*Permite que as tags ocupem o mesmo lugar */
   top: 50%; /* Relativo ao pai */
-  left: 0; /* Posicionamento a esquerda */
+  left: 0; /* Posicionamento inicial a esquerda */
   transform: translateY(-50%); /*  Menos 50% para cima do que ele esta */
   z-index: 1; /* Faz com que este elemento fica a frente do outro que esta no mesmo lugar que ele */
+
+  animation: slide-back 0.2s; /* Chamando o @keyframes slide-back, fazendo o durar 2s */
 }
 
 .light #switch button {
-  right: 0; /* Posicionamento a direita */
-  left: initial; /* Reseta */
+  animation: slide-in 0.2s forwards; /* Chamando o @keyframes slide-in, fazendo o durar 4s e matendo ele na posição to do @keyframes slide-in*/
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color); /* Ao descansar o mouse em cima do botão */
 }
 
 #switch span {
@@ -186,5 +191,26 @@ footer {
 
   .light {
     --bg-url: url(./assts/bg-desktop-light.jpg);
+  }
+}
+
+/* Animação do botão light*/
+@keyframes slide-in {
+  from {
+    /* Vai de 0 */
+    left: 0;
+  }
+  to {
+    /* Até 50% */
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
