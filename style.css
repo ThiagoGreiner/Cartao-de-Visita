@@ -1,108 +1,96 @@
+/* Geral */
 * {
-  margin: 0; /* Retirando todas margens da pagina */
-  padding: 0; /* Retirando todos espaçamentos internos da pagina */
-  box-sizing: border-box; /* Adicionando as medidas apartir das bordas */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  /* Modo raiz */
-  --text-color: white; /* Criação de var */
-  --bg-url: url(./assets/bg-mobile.jpg); /* Imagem de fundo */
-  --stroke-color: rgba(255, 255, 255, 0.5); /* Criação de var */
-  --surface-color: rgba(
-    255,
-    255,
-    255,
-    0.05
-  ); /* Cor de fundo, o ultimo dado informa o grau de transparência */
-  --surface-color-hover: rgba(0, 0, 0, 0.02); /* hover botãos */
-  --highlight-color: rgba(255, 255, 255, 0.2); /* hover social links */
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
-  /* Modo light */
-  --text-color: black; /* Criação de var */
-  --bg-url: url(./assets/bg-mobile-light.jpg); /* Imagem de fundo */
-  --stroke-color: rgba(0, 0, 0, 0.5); /* Criação de var */
-  --surface-color: rgba(
-    0,
-    0,
-    0,
-    0.05
-  ); /* Cor de fundo, o ultimo dado informa o grau de transparência */
-  --surface-color-hover: rgba(0, 0, 0, 0.02); /* hover botãos */
-  --highlight-color: rgba(0, 0, 0, 0.1); /* hover social links */
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
-  background-image: var(--bg-url); /* Puxando imagem */
-  background-repeat: no-repeat; /* Não repetir a imagem */
-  background-position: top center; /* Centralizar no eixo X e manter no topo do eixo Y */
-  background-size: cover; /* Ajustar a imagem conforme o tamanho da tela */
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   height: 100vh;
 }
 
 body * {
-  /* Definindo a fonte e cor a serem usados na pagina */
   font-family: "Inter", sans-serif;
-  color: var(--text-color); /* Puxando a cor da variavel */
+  color: var(--text-color);
 }
 
 #container {
-  width: 100%; /* Largura */
-  max-width: 588px; /* Largura maxima */
-  margin: 56px auto 0px; /* Margens superior de 56px, laterais automaticas, inferior 0 */
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
   padding: 0 24px;
 }
 
 /* Profile */
 #profile {
-  text-align: center; /* Retirando o padrão left e alinhando tudo ao centro */
-  padding: 24px; /* Espaçamento interno */
+  text-align: center;
+  padding: 24px;
 }
 
 #profile img {
-  width: 112px; /* Largura */
+  width: 112px;
 }
 
 #profile p {
-  font-weight: 500; /* Tamnho da fonte */
-  line-height: 24px; /* Altura da linha */
-  margin-top: 8px; /* Margem */
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
 }
 
 /* Switch*/
 #switch {
   position: relative;
-  width: 64px; /* Largura */
+  width: 64px;
 
-  margin: 4px auto; /* Margem */
+  margin: 4px auto;
 }
 
 #switch button {
-  width: 32px; /* Largura */
-  height: 32px; /* Altura */
-  background: white var(--switch-bg-url) no-repeat center; /* Fundo */
-  border: 0; /* Borda */
-  border-radius: 50%; /* Arredondamento da borda */
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
 
-  position: absolute; /*Permite que as tags ocupem o mesmo lugar */
-  top: 50%; /* Relativo ao pai */
-  left: 0; /* Posicionamento inicial a esquerda */
-  transform: translateY(-50%); /*  Menos 50% para cima do que ele esta */
-  z-index: 1; /* Faz com que este elemento fica a frente do outro que esta no mesmo lugar que ele */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
 
-  animation: slide-back 0.2s; /* Chamando o @keyframes slide-back, fazendo o durar 2s */
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  animation: slide-in 0.2s forwards; /* Chamando o @keyframes slide-in, fazendo o durar 4s e matendo ele na posição to do @keyframes slide-in*/
+  animation: slide-in 0.2s forwards;
 }
 
 #switch button:hover {
-  outline: 8px solid var(--highlight-color); /* Ao descansar o mouse em cima do botão */
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -118,62 +106,57 @@ body * {
 
 /*links*/
 ul {
-  list-style: none; /* Retirando os pontinhos da lista */
-  display: flex; /* Permite a mobilidade da tag */
-  flex-direction: column; /* Ordena uma em baixo da outra */
-  gap: 16px; /* Anre um espaço entre as tags */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-  padding: 24px 0; /*Espassamento interno */
+  padding: 24px 0;
 }
 
 ul li a {
-  display: flex; /* Permite que a tag a ocupe toda linha */
-  justify-content: center; /* Centraliza as tags no eixo Y */
-  justify-content: center; /* Centraliza as tags no eixo X */
+  display: flex;
+  justify-content: center;
+  justify-content: center;
 
-  padding: 16px 24px; /* Expassamento interno */
+  padding: 16px 24px;
 
-  background-color: var(--surface-color); /* Cor de fundo */
-  border: 1px solid var(--stroke-color); /* Bordas */
-  border-radius: 8px; /* Arredondamento das bordas */
+  background-color: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
 
-  backdrop-filter: blur(4px); /* Adiciona um efeito embassado no elemento */
-  -webkit-backdrop-filter: blur(
-    4px
-  ); /* A mesma funcionalidade do efeito acima, porem o -webkit- permite que este efeito tambem funcione no browser safari9 */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
-  text-decoration: none; /* Retira a linha de baixo do texto */
-  font-weight: 500; /* Tamanho da fonte */
+  text-decoration: none;
+  font-weight: 500;
 
-  transition: background 0.2s; /* Usamos para informar qual tag fara a transição para o hover abaixo e quanto tempo levara a transição */
+  transition: background 0.2s;
 }
 
 ul li a:hover {
-  /* Ira alterar o designer das tag quanto o mouse passar em cima */
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
 #social-links {
-  display: flex; /* Permite a mobilidade da tag */
-  justify-content: center; /*Centraliza os icones */
-  padding: 24px 0; /* Coloca espassamento superior */
-  font-size: 24px; /* Aumenta o tamanho do icone */
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
 }
 
 #social-links a {
-  /* Alinhamentos das tags a nos eixos */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
 
-  transition: background 0.2s; /* Tempo de transição para o hover */
-  border-radius: 50%; /* Borda arredonda para o hover */
+  transition: background 0.2s;
+  border-radius: 50%;
 }
 
 #social-links a:hover {
-  /* Ira alterar o designer dos icones quanto o mouse passar em cima */
   background: var(--highlight-color);
 }
 
@@ -197,11 +180,9 @@ footer {
 /* Animação do botão light*/
 @keyframes slide-in {
   from {
-    /* Vai de 0 */
     left: 0;
   }
   to {
-    /* Até 50% */
     left: 50%;
   }
 }
