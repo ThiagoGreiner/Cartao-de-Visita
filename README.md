@@ -32,7 +32,20 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Cartão de Visitas é um agregador de links online.
+O Cartão de Visitas Online é uma plataforma inovadora que reimagina o conceito tradicional de cartões de visitas, transformando-os em poderosos agregadores de links personalizados. Esta ferramenta intuitiva e moderna serve como um cartão de boas-vindas digital, permitindo que os usuários consolidem todas as suas informações importantes e links relevantes em um único local acessível.
+
+<strong>Recursos Principais:</strong>
+
+1. Agregador de Links Personalizados: Os usuários podem adicionar uma variedade de links personalizados, como redes sociais, portfólio, site pessoal, blogs, contatos profissionais e muito mais.
+2. Compatibilidade Responsiva: Os cartões de visitas online são otimizados para funcionar perfeitamente em dispositivos móveis, tablets e computadores, garantindo uma experiência consistente em qualquer plataforma.
+3. Compartilhamento Facilitado: Os usuários podem compartilhar seus cartões de visitas online de forma rápida e conveniente por meio de um link único, QR code, ou integrando-o em suas assinaturas de e-mail.
+
+<strong>Benefícios:</strong>
+
+1. Profissionalismo Aprimorado: Os cartões de visitas online oferecem uma apresentação profissional e moderna, impressionando os contatos com uma abordagem inovadora.
+2. Conveniência e Eficiência: Consolidar todos os links relevantes em um único local simplifica o processo de networking e aumenta a acessibilidade das informações importantes.
+
+O Cartão de Visitas Online é a solução ideal para profissionais empreendedores, freelancers, influenciadores digitais, e qualquer pessoa que queira destacar sua presença online de forma elegante e eficaz. Experimente hoje mesmo e dê o próximo passo no networking digital!
 
 ## 🔖 Layout
 
