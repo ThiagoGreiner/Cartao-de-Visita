@@ -7,12 +7,7 @@ Baseado nos programas de ensino de tecnologias WEB da Rocketseat.
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <a href="#-layout">Layout</a>
 </p>
 
 <br>
@@ -49,8 +44,4 @@ O Cartão de Visitas Online é a solução ideal para profissionais empreendedor
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/mRurXr2YRAHvDIZcOqOQUi/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?type=design&node-id=0-1&mode=design&t=xM8W4wfR0mDP1qXf-0>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/DMCP81OkBAyR10BtV5b4pe/Untitled?node-id=0-1&t=AUayQiSiNNmJLWNN-1) ou o protótipo [NESTE LINK](https://www.figma.com/proto/DMCP81OkBAyR10BtV5b4pe/Untitled?node-id=0-129&node-type=canvas&t=AUayQiSiNNmJLWNN-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A129&show-proto-sidebar=1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
