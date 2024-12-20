@@ -8,7 +8,7 @@ Baseado nos programas de ensino de tecnologias WEB da Rocketseat.
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-prototipo">Protótipo</a>
+  <a href="#-protótipo">Protótipo</a>
 </p>
 
 <br>
@@ -49,4 +49,4 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 ## 🖥 Protótipo
 
-<a href="https://thiagogreiner.github.io/Cartao-de-Visita/">Visualize o protótipo aqui</a>
+Você pode visualizar o protótipo web através [DESSE LINK](https://thiagogreiner.github.io/Cartao-de-Visita/)
