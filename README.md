@@ -7,7 +7,8 @@ Baseado nos programas de ensino de tecnologias WEB da Rocketseat.
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-prototipo">Protótipo</a>
 </p>
 
 <br>
@@ -45,3 +46,7 @@ O Cartão de Visitas Online é a solução ideal para profissionais empreendedor
 ## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/DMCP81OkBAyR10BtV5b4pe/Untitled?node-id=0-1&t=AUayQiSiNNmJLWNN-1) ou o protótipo [NESTE LINK](https://www.figma.com/proto/DMCP81OkBAyR10BtV5b4pe/Untitled?node-id=0-129&node-type=canvas&t=AUayQiSiNNmJLWNN-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A129&show-proto-sidebar=1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+## 🖥 Protótipo
+
+<a href="https://thiagogreiner.github.io/Cartao-de-Visita/">Visualize o protótipo aqui</a>
